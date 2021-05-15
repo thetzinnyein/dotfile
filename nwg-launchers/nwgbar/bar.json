@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Lock screen",
+    "exec": "swaylock -C ~/.config/swaylock/config",
+    "icon": "/usr/share/nwg-launchers/images/xfce4-system-lock.svg"
+  },
+  {
+  	"name": "Suspend",
+  	"exec": "systemctl suspend;swaylock -C ~/.config/swaylock/config",
+  	"icon": "/usr/share/nwg-launchers/images/system-suspend.svg"
+  },
+  {
+    "name": "Logout",
+    "exec": "loginctl terminate-user $USER",
+    "icon": "/usr/share/nwg-launchers/images/system-log-out.svg"
+  },
+  {
+    "name": "Reboot",
+    "exec": "systemctl reboot",
+    "icon": "/usr/share/nwg-launchers/images/system-reboot.svg"
+  },
+  {
+    "name": "Shutdown",
+    "exec": "systemctl -i poweroff",
+    "icon": "/usr/share/nwg-launchers/images/gnome-shutdown.svg"
+  }
+]
